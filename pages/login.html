@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Vecfer</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .bgded {
+    background-image: url('images/demo/backgrounds/02.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+  }
+
+  .login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+  }
+
+  .login-container h1 {
+    color: white;
+  }
+
+  .login-container .btn {
+    background-color: orange;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .login-container .btn:hover {
+    background-color: darkorange;
+  }
+
+  /* Hide all other elements */
+  .wrapper, header, main, footer, .nospace {
+    display: none;
+  }
+</style>
+</head>
+<body>
+  <div class="bgded"></div>
+  <div class="login-container">
+    <h1>Welcome to Vecfer</h1>
+    <a href="#" class="btn">Login</a>
+  </div>
+</body>
+</html>
